@@ -11,19 +11,19 @@ const queue = new Map();
 const ballResponses = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it.", "Signs point to yes.", "Yes.", "Outlook good.", "Most Likely.", "Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", "Don't count on it.", "My reply is no", "My sources say no.", "Outlook not so good.", "Very doubtful."];
 
 client.once('ready', () => {
-        console.log('Ready to operate!');
+        console.log('Ready and listening for commands!!');
 });
 
 client.once('reconnecting', () => {
-        console.log('Reconnecting!');
+        console.log('Reconnecting...');
 });
 
 client.once('disconnect', () => {
-        console.log('Disconnect!');
+        console.log('I have disconnected! Attempting to reconnect!');
 });
 
 client.on('ready', () => {
-        client.user.setActivity('For Commands', { type: 'LISTENING' });
+        client.user.setActivity('Your Commands', { type: 'LISTENING' });
         });
 
 // Constants and logging completed. Entering core bot
